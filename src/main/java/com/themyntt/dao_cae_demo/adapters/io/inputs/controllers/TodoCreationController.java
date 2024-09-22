@@ -1,4 +1,4 @@
-package com.themyntt.dao_cae_demo.adapters.io.inputs;
+package com.themyntt.dao_cae_demo.adapters.io.inputs.controllers;
 
 import com.themyntt.dao_cae_demo.assemblers.use_cases.todo_creation.TodoCreationUseCaseAssembler;
 import com.themyntt.dao_cae_demo.core.use_cases.todo_creation.TodoCreationUseCase;
