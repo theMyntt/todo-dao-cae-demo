@@ -17,5 +17,8 @@ public class TodoRepository {
         stmt.setString(2, entity.getName());
         stmt.setString(3, entity.getDescription());
         stmt.setInt(4, isCompleted);
+
+        stmt.execute();
+        stmt.close();
     }
 }
