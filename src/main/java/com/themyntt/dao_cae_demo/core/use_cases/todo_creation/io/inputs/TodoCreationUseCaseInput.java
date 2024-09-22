@@ -1,6 +1,8 @@
 package com.themyntt.dao_cae_demo.core.use_cases.todo_creation.io.inputs;
 
 import com.cae.use_cases.io.UseCaseInput;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -12,7 +14,12 @@ import lombok.Setter;
 @Getter
 @Setter
 public class TodoCreationUseCaseInput extends UseCaseInput {
+    @NotNull
+    @NotEmpty
     private String name;
+
     private String description;
+
+    @NotNull
     private Boolean isCompleted;
 }
