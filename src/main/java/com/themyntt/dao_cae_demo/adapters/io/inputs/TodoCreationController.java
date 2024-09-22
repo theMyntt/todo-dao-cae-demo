@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(name = "/api/todo/create")
+@RequestMapping("/api/todo/create")
 public class TodoCreationController {
     private static final TodoCreationUseCase useCase = TodoCreationUseCaseAssembler.V1;
 
