@@ -10,7 +10,7 @@ public class TodoRepository {
     public static void insert(TodoEntity entity) throws SQLException {
         String sql = "INSERT INTO todos VALUES (?,?,?,?)";
 
-        int isCompleted = entity.getIsCompleted() ? 0 : 1;
+        int isCompleted = entity.getIsCompleted() ? 1 : 0;
 
         PreparedStatement stmt = DatabaseConnection.getConn().prepareStatement(sql);
         stmt.setString(1, entity.getId());
